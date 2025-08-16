@@ -1,0 +1,69 @@
+2025-08-16 01:12:51,955 INFO read data as data frame
+2025-08-16 01:12:51,989 INFO data ingestion has completed
+2025-08-16 01:12:51,989 INFO Data Ingestion Completed
+2025-08-16 01:12:52,036 INFO Read the data as DataFrame
+2025-08-16 01:12:52,036 INFO obtaning preprocessor path
+2025-08-16 01:12:52,036 INFO numerical columns:['reading_score', 'writing_score']
+2025-08-16 01:12:52,036 INFO categorical columns:['gender', 'race_ethnicity', 'parental_level_of_education', 'lunch', 'test_preparation_course']
+2025-08-16 01:12:52,043 INFO applying preprocessor path on training and testing dataset
+2025-08-16 01:12:52,083 INFO data tranformation sucessfully
+2025-08-16 01:12:52,095 INFO Read data as data frame
+2025-08-16 01:12:52,095 INFO train data shape:
+(800, 8)
+2025-08-16 01:12:52,095 INFO test data shape: 
+(200, 8)
+2025-08-16 01:12:52,099 INFO train data null value:
+gender                         0
+race_ethnicity                 0
+parental_level_of_education    0
+lunch                          0
+test_preparation_course        0
+math_score                     0
+reading_score                  0
+writing_score                  0
+dtype: int64
+2025-08-16 01:12:52,101 INFO test data null value:
+gender                         0
+race_ethnicity                 0
+parental_level_of_education    0
+lunch                          0
+test_preparation_course        0
+math_score                     0
+reading_score                  0
+writing_score                  0
+dtype: int64
+2025-08-16 01:12:52,107 INFO train data duplicated:
+0
+2025-08-16 01:12:52,107 INFO test data duplicated:
+0
+2025-08-16 01:12:52,136 INFO train data statatics info:
+       math_score  reading_score  writing_score
+count  800.000000     800.000000     800.000000
+mean    66.496250      69.555000      68.456250
+std     15.024302      14.461532      15.085342
+min      8.000000      24.000000      15.000000
+25%     57.000000      60.000000      58.000000
+50%     66.000000      70.000000      69.000000
+75%     77.000000      80.000000      79.000000
+max    100.000000     100.000000     100.000000
+2025-08-16 01:12:52,162 INFO test data statatics info: 
+       math_score  reading_score  writing_score
+count  200.000000       200.0000     200.000000
+mean    64.460000        67.6250      66.445000
+std     15.638453        15.0805      15.563679
+min      0.000000        17.0000      10.000000
+25%     55.000000        57.0000      56.000000
+50%     66.000000        70.0000      69.000000
+75%     76.000000        78.0000      77.000000
+max    100.000000        99.0000     100.000000
+2025-08-16 01:12:52,163 INFO data validated sucessfully
+2025-08-16 01:12:52,163 INFO evaluate model: LinearRegressor
+2025-08-16 01:12:52,186 INFO evaluate model: Ridge
+2025-08-16 01:12:59,458 INFO evaluate model: Lasso
+2025-08-16 01:12:59,524 INFO evaluate model: DecisionTreeRegressor
+2025-08-16 01:12:59,774 INFO evaluate model: RandomForestRegressor
+2025-08-16 01:13:00,605 INFO evaluate model: AdaBoostRegressor
+2025-08-16 01:13:07,383 INFO evaluate model: GradientBoostingRegressor
+2025-08-16 01:13:18,492 INFO evaluate model: SupportVectorRegressor
+2025-08-16 01:13:19,616 INFO best model found:Lasso: best score: 0.881566256500233
+2025-08-16 01:13:19,628 INFO model trained sucessfully
